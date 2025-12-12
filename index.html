@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIF Search</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="mainstyle.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="logo">GIF Search</div>
+
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="game.html">Game</a>
+
+        <div class="theme-menu">
+          <button type="button" id="themeMenuButton">Theme ▾</button>
+          <div class="theme-menu-dropdown" id="themeMenuDropdown">
+            <button type="button" id="themeDefault">Default</button>
+            <button type="button" id="themePastel">Pastel</button>
+            <button type="button" id="themeDark">Dark</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="search-section">
+        <h1>Search GIFs</h1>
+
+        <form id="searchForm" class="search-form">
+          <input type="search" id="searchInput" placeholder="Search for GIFs..." required />
+          <button type="submit">Search</button>
+        </form>
+      </section>
+
+      <section class="results-section">
+        <p id="resultsMessage" class="results-message">Search for GIFs above ✨</p>
+        <div id="resultsGrid" class="results-grid"></div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

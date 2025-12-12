@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="gamestyle.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="logo">GIF Search</div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="game.html" class="active">Game</a>
+
+      <div class="theme-menu">
+        <button type="button" id="themeMenuButton">Theme ▾</button>
+        <div class="theme-menu-dropdown" id="themeMenuDropdown">
+          <button type="button" id="themeDefault">Default</button>
+          <button type="button" id="themePastel">Pastel</button>
+          <button type="button" id="themeDark">Dark</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <h1>Rock Paper Scissors</h1>
+      <p>Choose one and play against the computer.</p>
+
+      <div class="rps-buttons">
+        <button id="rock" type="button">Rock</button>
+        <button id="paper" type="button">Paper</button>
+        <button id="scissors" type="button">Scissors</button>
+      </div>
+
+      <div class="rps-results">
+        <p id="playerChoice">Your choice:</p>
+        <p id="computerChoice">Computer choice:</p>
+        <h2 id="resultText"></h2>
+        <div id="rpsEffect" class="rps-effect"></div>
+        <div id="confetti" class="confetti"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
