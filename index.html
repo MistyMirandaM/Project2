@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIF Search</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="mainstyle.css" />
+    <link rel="stylesheet" href="mainstyle.css">
   </head>
 
   <body>
@@ -36,17 +36,18 @@
         <h1>Search GIFs</h1>
 
         <form id="searchForm" class="search-form">
-          <input type="search" id="searchInput" placeholder="Search for GIFs..." required />
+          <input type="search" id="searchInput" placeholder="Search for GIFs..." required>
           <button type="submit">Search</button>
         </form>
       </section>
 
-      <section class="results-section">
+      <div class="results-section">
         <p id="resultsMessage" class="results-message">Search for GIFs above ✨</p>
-        <div id="resultsGrid" class="results-grid"></div>
-      </section>
-    </main>
+       <div id="resultsGrid" class="results-grid"></div>
+      </div>
 
-    <script src="main.js"></script>
-  </body>
+
+    </main>
+  <script src="main.js"></script>
+</body>
 </html>

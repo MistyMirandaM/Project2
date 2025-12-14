@@ -146,8 +146,6 @@ body.theme-dark .theme-menu-dropdown button:hover {
   background-color: rgba(255, 255, 255, 0.08);
 }
 
-@import url("base.css");
-
 main {
   max-width: 1000px;
   margin: 2rem auto;
